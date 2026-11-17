@@ -1,12 +1,12 @@
 # Terms of Service
 
-Welcome to **meowed-at.me** ("we", "us", "our"), a free, open-source subdomain registration service for individuals and non-commercial projects.
+Welcome to **has-a.space** ("we", "us", "our"), a free, open-source subdomain registration service for individuals and non-commercial projects.
 
 Our goal is to make it easier for people of all backgrounds and experience levels to establish their own space on the internet.
 
 By using the Service, you agree to these Terms of Service ("Terms").
 
-For questions or concerns, contact us at **admin@meowed-at.me**.
+For questions or concerns, contact us at **admin@has-a.space**.
 
 **Last Updated:** 17 November 2026
 
@@ -14,14 +14,14 @@ For questions or concerns, contact us at **admin@meowed-at.me**.
 
 The following definitions apply throughout these Terms:
 
-- **"Service"** refers to the meowed-at.me website, subdomain registration system, GitHub repositories, DNS infrastructure, and associated systems.
+- **"Service"** refers to the has-a.space website, subdomain registration system, GitHub repositories, DNS infrastructure, and associated systems.
 - **"User", "you", and "your"** refer to anyone accessing or using the Service.
-- **"Subdomain"** refers to a domain name registered beneath `meowed-at.me`.
-- **"Root Subdomain"** refers to the primary registered subdomain, such as `example.meowed-at.me`.
-- **"Nested Subdomain"** refers to a subdomain beneath a Root Subdomain, such as `blog.example.meowed-at.me`.
+- **"Subdomain"** refers to a domain name registered beneath `has-a.space`.
+- **"Root Subdomain"** refers to the primary registered subdomain, such as `example.has-a.space`.
+- **"Nested Subdomain"** refers to a subdomain beneath a Root Subdomain, such as `blog.example.has-a.space`.
 - **"Content"** refers to websites, applications, files, media, software, and other materials made available through a Subdomain.
 - **"Maintainers"** refers to individuals authorised to administer the Service, review registrations, and enforce these Terms.
-- **"Service Owner"** refers to the individual with ultimate responsibility for the operation, policies, and administration of meowed-at.me.
+- **"Service Owner"** refers to the individual with ultimate responsibility for the operation, policies, and administration of has-a.space.
 
 ## 1. Acceptance of Terms
 
@@ -51,7 +51,7 @@ We welcome personal websites, portfolios, blogs, creative projects, open-source 
 
 ## 3. Service Description
 
-meowed-at.me provides free Subdomain registration and DNS management under the `meowed-at.me` domain.
+has-a.space provides free Subdomain registration and DNS management under the `has-a.space` domain.
 
 Registrations are submitted through our public GitHub repository and are subject to automated validation and maintainer review.
 
@@ -163,7 +163,7 @@ This restriction applies to repository contributions and does not prohibit the u
 
 ## 8. Ownership and Intellectual Property
 
-We retain ownership of the `meowed-at.me` domain, associated infrastructure, branding, and systems operated by us.
+We retain ownership of the `has-a.space` domain, associated infrastructure, branding, and systems operated by us.
 
 Users retain ownership of their original Content, subject to applicable third-party rights.
 
@@ -192,7 +192,7 @@ Serious violations, active abuse, or urgent security concerns may result in imme
 
 Users who believe their registration was incorrectly rejected, suspended, or terminated may request a review.
 
-Reviews may be requested through our official support channels or by contacting **admin@meowed-at.me**.
+Reviews may be requested through our official support channels or by contacting **admin@has-a.space**.
 
 Where a dispute concerns a rejection based on an undocumented requirement or an exceptional interpretation of these Terms, the matter must be referred to the Service Owner.
 
@@ -239,7 +239,7 @@ Personal information is processed in accordance with applicable data protection 
 
 Further information about processing purposes, legal bases, retention periods, and individual rights should be provided in our Privacy Policy.
 
-For privacy enquiries, contact **admin@meowed-at.me**.
+For privacy enquiries, contact **admin@has-a.space**.
 
 ## 12. Disclaimer and Limitation of Liability
 
@@ -283,12 +283,12 @@ Users who disagree with updated Terms may discontinue use and request removal of
 
 For questions, concerns, abuse reports, appeals, or other enquiries:
 
-**Email:** admin@meowed-at.me
+**Email:** admin@has-a.space
 
-**Website:** https://meowed-at.me
+**Website:** https://has-a.space
 
-**Documentation:** https://docs.meowed-at.me/
+**Documentation:** https://docs.has-a.space/
 
-**GitHub:** https://github.com/meowed-at-me
+**GitHub:** https://github.com/has-a-space
 
 **Discord:** https://discord.gg/KFEN5E3PyR

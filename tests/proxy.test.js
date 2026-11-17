@@ -23,9 +23,9 @@ function getDomainData(file) {
 function validateProxiedRecords(t, data, file) {
     const recordTypes = Array.from(requiredRecordsToProxy).join(", ");
 
-    // Forcefully stop raw.meowed-at.me from being proxied
+    // Forcefully stop raw.has-a.space from being proxied
     if (file === "raw.json") {
-        t.true(!data.proxied, `${file}: raw.meowed-at.me cannot be proxied`);
+        t.true(!data.proxied, `${file}: raw.has-a.space cannot be proxied`);
         return;
     }
 

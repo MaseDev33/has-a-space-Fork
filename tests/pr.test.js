@@ -39,15 +39,15 @@ t("Users can only update their own subdomains", (t) => {
             const subdomain = file.replace(/\.json$/, "");
             const data = getDomainData(subdomain);
 
-            if (data.owner.username === "meowed-at-me") {
+            if (data.owner.username === "has-a-space") {
                 t.true(
                     admins.includes(prAuthorId),
-                    `${subdomain}: ${prAuthor} is not authorized to update ${subdomain}.meowed-at.me`
+                    `${subdomain}: ${prAuthor} is not authorized to update ${subdomain}.has-a.space`
                 );
             } else {
                 t.true(
                     data.owner.username.toLowerCase() === prAuthor || trusted.includes(prAuthorId),
-                    `${file}: ${prAuthor} is not authorized to update ${subdomain}.meowed-at.me`
+                    `${file}: ${prAuthor} is not authorized to update ${subdomain}.has-a.space`
                 );
             }
         });
@@ -63,15 +63,15 @@ t("Users can only update their own subdomains", (t) => {
                     .join("\n")
             );
 
-            if (data.owner.username === "meowed-at-me") {
+            if (data.owner.username === "has-a-space") {
                 t.true(
                     admins.includes(prAuthorId),
-                    `${subdomain}: ${prAuthor} is not authorized to delete ${subdomain}.meowed-at.me`
+                    `${subdomain}: ${prAuthor} is not authorized to delete ${subdomain}.has-a.space`
                 );
             } else {
                 t.true(
                     data.owner.username.toLowerCase() === prAuthor || trusted.includes(prAuthorId),
-                    `${file}: ${prAuthor} is not authorized to delete ${subdomain}.meowed-at.me`
+                    `${file}: ${prAuthor} is not authorized to delete ${subdomain}.has-a.space`
                 );
             }
         });

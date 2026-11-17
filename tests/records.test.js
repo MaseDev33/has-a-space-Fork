@@ -141,8 +141,8 @@ function validateRecordValues(t, data, file) {
 
             if (key === "CNAME") {
                 t.true(isValidHostname(value), `${file}: Invalid hostname for ${key}`);
-                t.true(value !== `${subdomain}.meowed-at.me`, `${file}: ${key} cannot point to itself`);
-                t.true(value !== "meowed-at.me", `${file}: ${key} cannot point to meowed-at.me`);
+                t.true(value !== `${subdomain}.has-a.space`, `${file}: ${key} cannot point to itself`);
+                t.true(value !== "has-a.space", `${file}: ${key} cannot point to has-a.space`);
 
                 for (const disallowed of disallowedCNAMEs) {
                     if (disallowed.startsWith(".")) {
@@ -160,7 +160,7 @@ function validateRecordValues(t, data, file) {
 
                 // Check for self-referencing redirects
                 const urlHost = new URL(value).host;
-                t.false(urlHost === `${subdomain}.meowed-at.me`, `${file}: ${key} cannot point to itself`);
+                t.false(urlHost === `${subdomain}.has-a.space`, `${file}: ${key} cannot point to itself`);
             }
         }
 
@@ -252,7 +252,7 @@ function validateRecordValues(t, data, file) {
 
                     const domainToken = record.split("vc-domain-verify=")[1].split(",")[0];
                     const targetName = file.replace(/^_vercel\./, "").replace(/\.json$/, "");
-                    const expectedDomain = `${targetName}.meowed-at.me`;
+                    const expectedDomain = `${targetName}.has-a.space`;
 
                     t.true(
                         domainToken === expectedDomain || domainToken.endsWith(`.${expectedDomain}`),
@@ -294,7 +294,7 @@ function validateRecordValues(t, data, file) {
 
             // Check for self-referencing redirects
             const urlHost = new URL(customRedirectURL).host;
-            t.false(urlHost === `${subdomain}.meowed-at.me`, `${urlMessage} cannot point to itself at index ${idx}`);
+            t.false(urlHost === `${subdomain}.has-a.space`, `${urlMessage} cannot point to itself at index ${idx}`);
         });
     }
 }

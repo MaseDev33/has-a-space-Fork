@@ -1,7 +1,7 @@
 var regNone = NewRegistrar("none");
 var providerCf = DnsProvider(NewDnsProvider("cloudflare"));
 
-var rootDomain = 'meowed-at.me';   // the Cloudflare zone
+var rootDomain = 'has-a.space';   // the Cloudflare zone
 
 var proxy = { // https://stackexchange.github.io/dnscontrol/providers/cloudflare
   on:  { "cloudflare_proxy": "on" },
@@ -68,7 +68,7 @@ for (var idx in domains) {
   var name = domains[idx].name;
   var domainData = domains[idx].data;
 
-  // a bad filename must never escape the meowed-at.me zone
+  // a bad filename must never escape the has-a.space zone
   if (!isValidName(name)) {
     throw "Invalid domain file name: " + name;
   }

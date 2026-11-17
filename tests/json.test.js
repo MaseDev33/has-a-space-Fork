@@ -93,14 +93,14 @@ async function validateFields(t, obj, fields, file, prefix = "") {
 
 async function validateFileName(t, file) {
     t.true(file.endsWith(".json"), `${file}: File does not have .json extension`);
-    t.false(file.includes(".meowed-at.me"), `${file}: File name should not contain .meowed-at.me`);
+    t.false(file.includes(".has-a.space"), `${file}: File name should not contain .has-a.space`);
     t.true(file === file.toLowerCase(), `${file}: File name should be all lowercase`);
     t.false(file.includes("--"), `${file}: File name should not contain consecutive hyphens`);
 
     const subdomain = file.replace(/\.json$/, "");
 
     t.regex(
-        subdomain + ".meowed-at.me",
+        subdomain + ".has-a.space",
         hostnameRegex,
         `${file}: FQDN must be 1-253 characters, can use letters, numbers, dots, and non-consecutive hyphens.`
     );
@@ -109,7 +109,7 @@ async function validateFileName(t, file) {
 
     const rootSubdomain = subdomain.split(".").pop();
     t.false(rootSubdomain.startsWith("_"), `${file}: Root subdomains should not start with an underscore`);
-    t.false(rootSubdomain.includes("meowed-at-me"), `${file}: Root subdomains should not contain meowed-at-me`);
+    t.false(rootSubdomain.includes("has-a-space"), `${file}: Root subdomains should not contain has-a-space`);
 }
 
 async function processFile(file, t) {
